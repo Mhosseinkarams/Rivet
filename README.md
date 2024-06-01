@@ -69,7 +69,7 @@ cmsRun runRivetAnalyzer_VJJ_miniAOD2016pre.py
 
 ### Dataset Configuration
 
-For each dataset ("2016pre", "2016post", "2017", "2018"), there is a corresponding CRAB configuration file and a `.cc` file. The `.cc` files, responsible for the main Rivet analysis, are located in the `SMP/src` directory. Each dataset has a different source file:
+For each dataset ("2016pre", "2016post", "2017", "2018"), there is a corresponding CRAB configuration file and a `.cc` file. The `.cc` files, responsible for the main Rivet analysis, are located in the `SMP/src` directory. Each analysis has different source files:
 
 - **2016pre dataset**: `CMS_1601_PAS_SMP_19_005`
 - **2016post dataset**: `CMS_1602_PAS_SMP_19_005`
