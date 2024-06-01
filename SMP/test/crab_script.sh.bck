@@ -1,0 +1,57 @@
+#this is not mean to be run locally
+
+echo Check if TTY
+if [ "`tty`" != "not a tty" ]; then
+  echo "YOU SHOULD NOT RUN THIS IN INTERACTIVE, IT DELETES YOUR LOCAL FILES"
+else
+
+echo "ENV..................................."
+env
+echo "VOMS"
+voms-proxy-info -all
+echo "CMSSW BASE, python path, pwd"
+echo $CMSSW_BASE 
+echo $PYTHON_PATH
+echo $PWD
+#echo $RIVET_REF_PATH
+#echo $RIVET_INFO_PATH
+#echo $RIVET_PLOT_PATH
+#echo $PYTHON27PATH
+cp -r src/* $CMSSW_BASE/src/
+#cp -r lib $CMSSW_BASE/
+#cp -r python $CMSSW_BASE/
+cp -rv src/Rivet/* $CMSSW_BASE/src/Rivet/
+for GROUP in TOP FSQ SMP HIG SUS HIN EXO BPH B2G GEN
+do
+  export RIVET_REF_PATH=$RIVET_REF_PATH:$CMSSW_BASE/src/Rivet/${GROUP}/data
+  export RIVET_INFO_PATH=$RIVET_INFO_PATH:$CMSSW_BASE/src/Rivet/${GROUP}/data
+  export RIVET_PLOT_PATH=$RIVET_PLOT_PATH:$CMSSW_BASE/src/Rivet/${GROUP}/data
+  export PYTHON27PATH=$PYTHON27PATH:$CMSSW_BASE/src/Rivet/${GROUP}/data
+done
+
+# cmsRivet scripts
+export PATH=$CMSSW_BASE/src/Rivet/scripts:$PATH
+
+# add latex package missing on lxplus7
+export TEXMFHOME=$TEXMFHOME:$CMSSW_BASE/src/Rivet/texmf
+
+which yodamerge &> /dev/null || GETYODA=1
+if [ $GETYODA ]; then
+  eval `scram tool info yoda | grep YODA_BASE`
+  export PATH=$PATH:$YODA_BASE/bin
+fi
+
+
+
+
+
+#echo $RIVET_REF_PATH
+#echo $RIVET_INFO_PATH
+#echo $RIVET_PLOT_PATH
+#echo $PYTHON27PATH
+
+
+fi
+
+
+cmsRun runRivetAnalyzer_VJJ_miniAOD.py

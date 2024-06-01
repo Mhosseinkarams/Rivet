@@ -1,0 +1,1002 @@
+DEBUG 2024-04-12 09:10:40.310 UTC: 	 CRAB Client version: v3.240110
+DEBUG 2024-04-12 09:10:40.310 UTC: 	 Running on: Linux lxplus716.cern.ch 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-04-12 09:10:40.310 UTC: 	 Executing command: 'submit'
+DEBUG 2024-04-12 09:10:40.311 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-04-12 09:10:40.324 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-04-12 09:10:40.324 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-04-12 09:10:40.325 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_5f_TuneCP5_INT_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM'
+DEBUG 2024-04-12 09:10:40.325 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-04-12 09:10:40.325 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab_VJJ_Rivet' already exists 
+Please change the requestName in the config file
+ERROR 2024-04-12 09:10:40.325 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab_VJJ_Rivet' already exists 
+Please change the requestName in the config file
+INFO 2024-04-12 09:10:40.333 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-04-13 02:28:57.577 UTC: 	 CRAB Client version: v3.240110
+DEBUG 2024-04-13 02:28:57.577 UTC: 	 Running on: Linux lxplus716.cern.ch 3.10.0-1160.108.1.el7.x86_64 #1 SMP Thu Jan 25 16:17:31 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-04-13 02:28:57.577 UTC: 	 Executing command: 'submit'
+DEBUG 2024-04-13 02:28:57.578 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-04-13 02:28:57.578 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-04-13 02:28:57.578 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-04-13 02:28:57.579 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-04-13 02:28:57.579 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM'
+DEBUG 2024-04-13 02:28:57.579 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-04-13 02:28:57.579 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-04-13 02:28:57.579 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+ERROR 2024-04-13 02:28:57.579 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240110.01/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+INFO 2024-04-13 02:28:57.591 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 06:09:04.537 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 06:09:04.538 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 06:09:04.538 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 06:09:04.539 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 06:09:04.572 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 06:09:04.573 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 06:09:04.593 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 06:09:04.593 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-16 06:09:04.593 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 06:09:04.593 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 06:09:04.647 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 06:09:04.647 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 06:09:04.673 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 06:10:07.676 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 06:10:07.677 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 06:10:07.677 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 06:10:07.677 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 06:10:07.677 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 06:10:07.677 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 06:10:07.678 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 06:10:07.678 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-16 06:10:07.678 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 06:10:07.678 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 06:10:07.678 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 06:10:07.678 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 06:10:07.679 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 08:48:15.438 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:48:15.438 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:48:15.438 UTC: 	 Executing command: 'kill'
+DEBUG 2024-05-16 08:48:15.440 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-16 08:49:26.771 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:26.771 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:26.771 UTC: 	 Executing command: 'kill'
+DEBUG 2024-05-16 08:49:26.771 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 08:49:26.772 UTC: 	 crab kill requires a projdir. Since you passed a taskname, we will run crab remake
+DEBUG 2024-05-16 08:49:26.785 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Executing command: 'remake'
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Checking credentials
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Found proxy file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-05-16 08:49:26.786 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:27.663 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:27.663 UTC: 	 Getting proxy life time left
+DEBUG 2024-05-16 08:49:27.663 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:28.246 UTC: 	 output : 706834
+33634
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:28.246 UTC: 	 Proxy valid for 09:20:34 hours
+DEBUG 2024-05-16 08:49:28.246 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-05-16 08:49:29.029 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-05-16 08:49:29.030 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:29.819 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:29.819 UTC: 	 Getting myproxy life time left for 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:29.819 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:30.172 UTC: 	 output : username: 24e7e50ebd371e5bf747f42898515d826da4923b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 717:22:00  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:30.173 UTC: 	 Myproxy is valid: 2582520
+DEBUG 2024-05-16 08:49:30.173 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: 24e7e50ebd371e5bf747f42898515d826da4923b  - validity: 29 days, 21:22:00
+ERROR 2024-05-16 08:49:30.173 UTC: 	 Error: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+ERROR 2024-05-16 08:49:30.173 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 280, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 668, in validateOptions
+    ret = self.remakeLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 729, in remakeLocalCache
+    remakeCmd = remake(logger=self.logger, cmdargs=cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 402, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/remake.py", line 80, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+INFO 2024-05-16 08:49:30.234 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 08:49:41.358 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:41.358 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:41.358 UTC: 	 Executing command: 'kill'
+DEBUG 2024-05-16 08:49:41.358 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 08:49:41.359 UTC: 	 crab kill requires a projdir. Since you passed a taskname, we will run crab remake
+DEBUG 2024-05-16 08:49:41.370 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:41.371 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:41.371 UTC: 	 Executing command: 'remake'
+DEBUG 2024-05-16 08:49:41.371 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-16 08:49:41.371 UTC: 	 Checking credentials
+DEBUG 2024-05-16 08:49:41.372 UTC: 	 Found proxy file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:41.372 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-05-16 08:49:41.372 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:41.905 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:41.906 UTC: 	 Getting proxy life time left
+DEBUG 2024-05-16 08:49:41.906 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:42.470 UTC: 	 output : 706820
+33620
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:42.470 UTC: 	 Proxy valid for 09:20:20 hours
+DEBUG 2024-05-16 08:49:42.471 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-05-16 08:49:42.580 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-05-16 08:49:42.580 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:43.247 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:43.247 UTC: 	 Getting myproxy life time left for 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:43.248 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:43.515 UTC: 	 output : username: 24e7e50ebd371e5bf747f42898515d826da4923b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 717:21:47  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:43.516 UTC: 	 Myproxy is valid: 2582460
+DEBUG 2024-05-16 08:49:43.516 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: 24e7e50ebd371e5bf747f42898515d826da4923b  - validity: 29 days, 21:21:00
+ERROR 2024-05-16 08:49:43.516 UTC: 	 Error: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+ERROR 2024-05-16 08:49:43.516 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 280, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 668, in validateOptions
+    ret = self.remakeLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 729, in remakeLocalCache
+    remakeCmd = remake(logger=self.logger, cmdargs=cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 402, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/remake.py", line 80, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+INFO 2024-05-16 08:49:43.518 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 08:49:53.531 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:53.531 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:53.531 UTC: 	 Executing command: 'kill'
+DEBUG 2024-05-16 08:49:53.531 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 08:49:53.532 UTC: 	 crab kill requires a projdir. Since you passed a taskname, we will run crab remake
+DEBUG 2024-05-16 08:49:53.540 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:49:53.540 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:49:53.540 UTC: 	 Executing command: 'remake'
+DEBUG 2024-05-16 08:49:53.541 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-16 08:49:53.541 UTC: 	 Checking credentials
+DEBUG 2024-05-16 08:49:53.541 UTC: 	 Found proxy file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:53.541 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-05-16 08:49:53.541 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:54.064 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:54.064 UTC: 	 Getting proxy life time left
+DEBUG 2024-05-16 08:49:54.064 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:54.517 UTC: 	 output : 706808
+33608
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:54.518 UTC: 	 Proxy valid for 09:20:08 hours
+DEBUG 2024-05-16 08:49:54.518 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-05-16 08:49:54.568 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-05-16 08:49:54.568 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:49:55.091 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:55.091 UTC: 	 Getting myproxy life time left for 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:55.091 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:49:55.348 UTC: 	 output : username: 24e7e50ebd371e5bf747f42898515d826da4923b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 717:21:35  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:49:55.348 UTC: 	 Myproxy is valid: 2582460
+DEBUG 2024-05-16 08:49:55.348 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: 24e7e50ebd371e5bf747f42898515d826da4923b  - validity: 29 days, 21:21:00
+ERROR 2024-05-16 08:49:55.349 UTC: 	 Error: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+ERROR 2024-05-16 08:49:55.349 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 280, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 668, in validateOptions
+    ret = self.remakeLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 729, in remakeLocalCache
+    remakeCmd = remake(logger=self.logger, cmdargs=cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 402, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/remake.py", line 80, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+INFO 2024-05-16 08:49:55.351 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 08:51:42.568 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:51:42.568 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:51:42.568 UTC: 	 Executing command: 'kill'
+DEBUG 2024-05-16 08:51:42.568 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 08:51:42.569 UTC: 	 crab kill requires a projdir. Since you passed a taskname, we will run crab remake
+DEBUG 2024-05-16 08:51:42.610 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Running on: Linux lxplus704.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Executing command: 'remake'
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Checking credentials
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Found proxy file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-05-16 08:51:42.611 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:51:43.382 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:51:43.383 UTC: 	 Getting proxy life time left
+DEBUG 2024-05-16 08:51:43.383 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:51:43.966 UTC: 	 output : 706699
+33499
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:51:43.966 UTC: 	 Proxy valid for 09:18:19 hours
+DEBUG 2024-05-16 08:51:43.966 UTC: 	 Encoded data for curl request: subresource=delegatedn
+DEBUG 2024-05-16 08:51:44.070 UTC: 	 Registering user credentials on myproxy for /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+DEBUG 2024-05-16 08:51:44.070 UTC: 	 Executing command :
+ voms-proxy-info --identity --file /tmp/x509up_u154931
+DEBUG 2024-05-16 08:51:44.890 UTC: 	 output : /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:51:44.890 UTC: 	 Getting myproxy life time left for 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:51:44.890 UTC: 	 Executing command :
+ myproxy-info -s myproxy.cern.ch -l 24e7e50ebd371e5bf747f42898515d826da4923b
+DEBUG 2024-05-16 08:51:45.479 UTC: 	 output : username: 24e7e50ebd371e5bf747f42898515d826da4923b
+owner: /DC=ch/DC=cern/OU=Organic Units/OU=Users/CN=mkaramsi/CN=863582/CN=Mohammad Hossein Karam Sichani
+  renewal policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  trusted retrieval policy: /DC=ch/DC=cern/OU=computers/CN=crab-(preprod|prod|dev)-tw(01|02|03|04).cern.ch|/DC=ch/DC=cern/OU=computers/CN=stefanov(m|m2).cern.ch|/DC=ch/DC=cern/OU=computers/CN=dciangot-tw.cern.ch
+  timeleft: 717:19:45  (29.9 days)
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-16 08:51:45.479 UTC: 	 Myproxy is valid: 2582340
+DEBUG 2024-05-16 08:51:45.479 UTC: 	 Result of myproxy credential check:
+  Credential exists on myproxy: username: 24e7e50ebd371e5bf747f42898515d826da4923b  - validity: 29 days, 21:19:00
+ERROR 2024-05-16 08:51:45.479 UTC: 	 Error: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+ERROR 2024-05-16 08:51:45.479 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 280, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 668, in validateOptions
+    ret = self.remakeLocalCache()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 729, in remakeLocalCache
+    remakeCmd = remake(logger=self.logger, cmdargs=cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 402, in __init__
+    self.validateOptions()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/remake.py", line 80, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: Task name does not match the regular expression '^\d{6}_\d{6}_?([^\:]*)\:[a-zA-Z0-9-]+_(crab_)?.+'.
+INFO 2024-05-16 08:51:45.523 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 12:27:33.931 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 12:27:33.932 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 12:27:33.932 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 12:27:33.932 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 12:27:33.933 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 12:27:33.933 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 12:27:33.933 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre_ext'
+DEBUG 2024-05-16 12:27:33.933 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11_ext1-v2/MINIAODSIM'
+DEBUG 2024-05-16 12:27:33.933 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre_ext'
+DEBUG 2024-05-16 12:27:33.933 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 12:27:33.933 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016pre_ext' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 12:27:33.933 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016pre_ext' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 12:27:33.983 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:22.453 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:22.453 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:22.453 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:22.518 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:22.592 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:22.592 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:22.676 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2018_ext'
+DEBUG 2024-05-16 19:22:22.676 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1_ext1-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:22.676 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2018_ext'
+DEBUG 2024-05-16 19:22:22.676 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:22.702 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018_ext/crab_GJets_SM_4f_TuneCP5_EWK_2018_ext' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:22.702 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018_ext/crab_GJets_SM_4f_TuneCP5_EWK_2018_ext' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:22.883 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:23.459 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:23.460 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:23.460 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:23.460 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:23.460 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:23.460 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:23.461 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2017_ext'
+DEBUG 2024-05-16 19:22:23.461 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9_ext1-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:23.461 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2017_ext'
+DEBUG 2024-05-16 19:22:23.461 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:23.516 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017_ext/crab_GJets_SM_4f_TuneCP5_EWK_2017_ext' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:23.517 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017_ext/crab_GJets_SM_4f_TuneCP5_EWK_2017_ext' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:23.520 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:24.119 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:24.120 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:24.120 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:24.120 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:24.120 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:24.120 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:24.121 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016post_ext'
+DEBUG 2024-05-16 19:22:24.121 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17_ext1-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:24.121 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016post_ext'
+DEBUG 2024-05-16 19:22:24.121 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:24.167 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016post_ext' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:24.167 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016post_ext' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:24.169 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:24.691 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:24.691 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:24.691 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:24.691 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:24.692 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:24.692 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:24.692 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre_ext'
+DEBUG 2024-05-16 19:22:24.692 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11_ext1-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:24.692 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre_ext'
+DEBUG 2024-05-16 19:22:24.692 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:24.710 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016pre_ext' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:24.710 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre_ext/crab_GJets_SM_4f_TuneCP5_EWK_2016pre_ext' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:24.713 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:25.354 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:25.354 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:25.354 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:25.354 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:25.355 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:25.355 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:25.355 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-05-16 19:22:25.355 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:25.355 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-05-16 19:22:25.356 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:25.367 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:25.368 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:25.372 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:25.945 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:25.945 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:25.945 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:25.945 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:25.946 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:25.946 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:25.946 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2017'
+DEBUG 2024-05-16 19:22:25.946 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:25.946 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2017'
+DEBUG 2024-05-16 19:22:25.946 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:25.963 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017/crab_GJets_SM_4f_TuneCP5_EWK_2017' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:25.963 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017/crab_GJets_SM_4f_TuneCP5_EWK_2017' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:25.967 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:26.442 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:26.442 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:26.442 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:26.442 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:26.443 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:26.443 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:26.444 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016post'
+DEBUG 2024-05-16 19:22:26.444 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:26.444 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016post'
+DEBUG 2024-05-16 19:22:26.444 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:26.484 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post/crab_GJets_SM_4f_TuneCP5_EWK_2016post' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:26.484 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post/crab_GJets_SM_4f_TuneCP5_EWK_2016post' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:26.487 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 19:22:30.867 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 19:22:30.867 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 19:22:30.867 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 19:22:30.867 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 19:22:30.868 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 19:22:30.868 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 19:22:30.869 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 19:22:30.869 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-16 19:22:30.869 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-16 19:22:30.869 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 19:22:30.927 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 19:22:30.928 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 19:22:30.929 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 20:23:04.223 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 20:23:04.223 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 20:23:04.223 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 20:23:04.223 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 20:23:04.224 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 20:23:04.224 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 20:23:04.250 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-05-16 20:23:04.250 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM'
+DEBUG 2024-05-16 20:23:04.250 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2018'
+DEBUG 2024-05-16 20:23:04.251 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 20:23:04.261 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 20:23:04.261 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2018/crab_GJets_SM_4f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 20:23:04.314 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 20:23:04.697 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 20:23:04.697 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 20:23:04.697 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 20:23:04.697 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 20:23:04.698 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 20:23:04.698 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 20:23:04.698 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2017'
+DEBUG 2024-05-16 20:23:04.698 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM'
+DEBUG 2024-05-16 20:23:04.698 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2017'
+DEBUG 2024-05-16 20:23:04.698 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 20:23:04.743 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017/crab_GJets_SM_4f_TuneCP5_EWK_2017' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 20:23:04.743 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2017/crab_GJets_SM_4f_TuneCP5_EWK_2017' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 20:23:04.745 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-16 20:23:05.146 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-16 20:23:05.147 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-16 20:23:05.147 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-16 20:23:05.147 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-16 20:23:05.147 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-16 20:23:05.148 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-16 20:23:05.148 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016post'
+DEBUG 2024-05-16 20:23:05.148 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODv2-106X_mcRun2_asymptotic_v17-v2/MINIAODSIM'
+DEBUG 2024-05-16 20:23:05.148 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016post'
+DEBUG 2024-05-16 20:23:05.148 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-16 20:23:05.179 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post/crab_GJets_SM_4f_TuneCP5_EWK_2016post' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-16 20:23:05.179 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016post/crab_GJets_SM_4f_TuneCP5_EWK_2016post' already exists 
+Please change the requestName in the config file
+INFO 2024-05-16 20:23:05.183 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-17 04:58:09.798 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-17 04:58:09.798 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-17 04:58:09.798 UTC: 	 Executing command: 'status'
+DEBUG 2024-05-17 04:58:09.798 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-17 04:58:57.404 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-17 04:58:57.404 UTC: 	 Running on: Linux lxplus720.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-17 04:58:57.404 UTC: 	 Executing command: 'status'
+DEBUG 2024-05-17 04:58:57.404 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+ERROR 2024-05-17 04:58:57.405 UTC: 	 Error: --long is not a valid CRAB project directory.
+ERROR 2024-05-17 04:58:57.405 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/status.py", line 48, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 280, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 680, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: --long is not a valid CRAB project directory.
+INFO 2024-05-17 04:58:57.406 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-17 09:11:50.627 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-17 09:11:50.627 UTC: 	 Running on: Linux lxplus700.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-17 09:11:50.627 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-17 09:11:50.627 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-17 09:11:50.628 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-17 09:11:50.628 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-17 09:11:50.650 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-17 09:11:50.650 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-17 09:11:50.650 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-17 09:11:50.650 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-17 09:11:50.650 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-17 09:11:50.650 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-17 09:11:50.694 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-20 17:02:57.135 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-20 17:02:57.135 UTC: 	 Running on: Linux lxplus714.cern.ch 3.10.0-1160.118.1.el7.x86_64 #1 SMP Wed Apr 24 16:01:50 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-20 17:02:57.135 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-20 17:02:57.136 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-20 17:02:57.147 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-20 17:02:57.147 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-20 17:02:57.420 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 17:02:57.420 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-20 17:02:57.420 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 17:02:57.420 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-20 17:02:57.458 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-20 17:02:57.458 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-20 17:02:57.479 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-20 18:49:17.544 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-20 18:49:17.545 UTC: 	 Running on: Linux lxplus703.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-20 18:49:17.545 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-20 18:49:17.545 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-20 18:49:17.548 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-20 18:49:17.549 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-20 18:49:17.608 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 18:49:17.608 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-20 18:49:17.608 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 18:49:17.609 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-20 18:49:17.616 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-20 18:49:17.616 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-20 18:49:17.792 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-20 20:38:31.855 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-20 20:38:31.856 UTC: 	 Running on: Linux lxplus703.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-20 20:38:31.856 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-20 20:38:31.856 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-20 20:38:32.398 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-20 20:38:32.399 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-20 20:38:32.575 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 20:38:32.575 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-20 20:38:32.575 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 20:38:32.575 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-20 20:38:32.595 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-20 20:38:32.595 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-20 20:38:32.695 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-20 21:01:10.790 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-20 21:01:10.791 UTC: 	 Running on: Linux lxplus703.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-20 21:01:10.791 UTC: 	 Executing command: 'checkusername'
+DEBUG 2024-05-20 21:01:10.796 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+DEBUG 2024-05-20 21:01:10.803 UTC: 	 Checking credentials
+DEBUG 2024-05-20 21:01:10.803 UTC: 	 Found proxy file /tmp/x509up_u154931
+DEBUG 2024-05-20 21:01:10.803 UTC: 	 Making sure it has proper VOMS extension
+DEBUG 2024-05-20 21:01:10.803 UTC: 	 Executing command :
+ voms-proxy-info --vo --file /tmp/x509up_u154931
+DEBUG 2024-05-20 21:01:11.461 UTC: 	 output : cms
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-20 21:01:11.462 UTC: 	 Getting proxy life time left
+DEBUG 2024-05-20 21:01:11.462 UTC: 	 Executing command :
+ voms-proxy-info --actimeleft --timeleft --file /tmp/x509up_u154931
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 output : 680363
+680363
+
+ error: 
+ retcode : 0
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Proxy valid for 188:59:23 hours
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Command use: checkusername
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Options use: []
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Instance is None
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Server base url is None
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Retrieving username ...
+DEBUG 2024-05-20 21:01:12.098 UTC: 	 Retrieving username from CRIC...
+DEBUG 2024-05-20 21:01:13.127 UTC: 	 username is mkaramsi
+INFO 2024-05-20 21:01:13.127 UTC: 	 Username is: mkaramsi
+DEBUG 2024-05-20 22:24:06.452 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-20 22:24:06.453 UTC: 	 Running on: Linux lxplus703.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-20 22:24:06.453 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-20 22:24:06.453 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-20 22:24:06.454 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-20 22:24:06.454 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-20 22:24:06.476 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 22:24:06.476 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-20 22:24:06.476 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-20 22:24:06.476 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-20 22:24:06.476 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-20 22:24:06.476 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-20 22:24:06.517 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-21 00:02:34.779 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-21 00:02:34.779 UTC: 	 Running on: Linux lxplus728.cern.ch 3.10.0-1160.118.1.el7.x86_64 #1 SMP Wed Apr 24 16:01:50 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-21 00:02:34.779 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-21 00:02:34.783 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-21 00:02:34.795 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-21 00:02:34.796 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-21 00:02:34.797 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-21 00:02:34.797 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-21 00:02:34.797 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-21 00:02:34.797 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-21 00:02:34.799 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-21 00:02:34.799 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-21 00:02:34.815 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-21 06:05:49.267 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-21 06:05:49.267 UTC: 	 Running on: Linux lxplus712.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-21 06:05:49.267 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-21 06:05:49.268 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-21 06:05:49.284 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-21 06:05:49.284 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-21 06:05:49.420 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-21 06:05:49.420 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-21 06:05:49.420 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-21 06:05:49.420 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-21 06:05:49.426 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-21 06:05:49.426 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pre' already exists 
+Please change the requestName in the config file
+INFO 2024-05-21 06:05:49.449 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-21 11:29:52.594 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-21 11:29:52.595 UTC: 	 Running on: Linux lxplus718.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-21 11:29:52.595 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-21 11:29:52.595 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-21 11:29:52.596 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-21 11:29:52.596 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-21 11:29:52.672 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_4f_TuneCP5_EWK_2016pretest4'
+DEBUG 2024-05-21 11:29:52.672 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_4f_TuneCP5_EWK_13TeV_amcatnlo-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM'
+DEBUG 2024-05-21 11:29:52.672 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_4f_TuneCP5_EWK_2016pre'
+DEBUG 2024-05-21 11:29:52.672 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-21 11:29:52.673 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pretest4' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-21 11:29:52.673 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_4f_TuneCP5_EWK_2016pre/crab_GJets_SM_4f_TuneCP5_EWK_2016pretest4' already exists 
+Please change the requestName in the config file
+INFO 2024-05-21 11:29:52.720 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
+DEBUG 2024-05-26 06:42:07.187 UTC: 	 CRAB Client version: v3.240416
+DEBUG 2024-05-26 06:42:07.187 UTC: 	 Running on: Linux lxplus729.cern.ch 3.10.0-1160.114.2.el7.x86_64 #1 SMP Wed Mar 20 15:54:52 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux - CentOS Linux 7 (Core)
+DEBUG 2024-05-26 06:42:07.187 UTC: 	 Executing command: 'submit'
+DEBUG 2024-05-26 06:42:07.188 UTC: 	 Found CRAB cache file /afs/cern.ch/user/m/mkaramsi/.crab3
+INFO 2024-05-26 06:42:07.189 UTC: 	 Will use CRAB configuration file crab_cfg.py
+DEBUG 2024-05-26 06:42:07.189 UTC: 	 Loading CRAB configuration file.
+DEBUG 2024-05-26 06:42:07.195 UTC: 	 Overriden parameter General.requestName with 'GJets_SM_5f_TuneCP5_EWK_2018'
+DEBUG 2024-05-26 06:42:07.195 UTC: 	 Overriden parameter Data.inputDataset with '/GJets_SM_5f_TuneCP5_EWK_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM'
+DEBUG 2024-05-26 06:42:07.195 UTC: 	 Overriden parameter General.workArea with 'GJets_SM_5f_TuneCP5_EWK_2018'
+DEBUG 2024-05-26 06:42:07.195 UTC: 	 Will use CRAB plugin ANALYSIS (i.e. will run an analysis job type).
+ERROR 2024-05-26 06:42:07.195 UTC: 	 Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_5f_TuneCP5_EWK_2018/crab_GJets_SM_5f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+ERROR 2024-05-26 06:42:07.196 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 152, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/submit.py", line 36, in __init__
+    SubCommand.__init__(self, logger, cmdargs, disable_interspersed_args=True)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/Commands/SubCommand.py", line 329, in __init__
+    getattr(self.configuration.General, 'requestName', None))
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.240416.00/lib/CRABClient/ClientUtilities.py", line 392, in createWorkArea
+    raise ConfigException("Working area '%s' already exists \nPlease change the requestName in the config file" % fullpath)
+ConfigException: Working area '/afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/GJets_SM_5f_TuneCP5_EWK_2018/crab_GJets_SM_5f_TuneCP5_EWK_2018' already exists 
+Please change the requestName in the config file
+INFO 2024-05-26 06:42:07.323 UTC: 	 Log file is /afs/cern.ch/user/m/mkaramsi/public/hepmc/CMSSW_11_2_4/src/Rivet/SMP/test/crab.log
