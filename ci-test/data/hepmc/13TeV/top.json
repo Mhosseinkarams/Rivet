@@ -1,0 +1,10 @@
+{
+        "LHC-13-Top" : {
+            "type" : "hist",
+            "samples" : [
+                "LHC-13-Top-All",
+                "LHC-13-Top-L",
+                "pp-13000-ttbar-sl-boosted"
+            ]
+        }
+}

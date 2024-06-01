@@ -1,0 +1,23 @@
+{
+        "pp-13000-Ztautau" : {
+            "type" : "stack",
+            "samples" : [
+                "pp-13000-Ztautau",
+                "pp-13000-Ztautau-2"
+            ]
+        },
+        "LHC-13-Z" : {
+            "type" : "stack",
+            "samples" : [
+                "LHC-13-Z-e",
+                "LHC-13-Z-mu"
+            ]
+        },
+        "LHC-13-Z-jets" : {
+            "type" : "stack",
+            "samples" : [
+                "LHC-13-Z-el-jets",
+                "LHC-13-Z-mu-jets"
+            ]
+        }
+}

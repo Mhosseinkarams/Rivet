@@ -1,0 +1,22 @@
+{
+        "LHC-13-DiJets-boosted" : {
+            "type" : "hist",
+            "samples" : ["LHC-13-DiJets-boosted"]
+        },
+        "LHC-13-Jets" : {
+            "type" : "stack",
+            "samples" : [
+                "LHC-13-Jets-0",
+                "LHC-13-Jets-1",
+                "LHC-13-Jets-2",
+                "LHC-13-Jets-3",
+                "LHC-13-Jets-4",
+                "LHC-13-Jets-5",
+                "LHC-13-Jets-6",
+                "LHC-13-Jets-7",
+                "LHC-13-Jets-8",
+                "LHC-13-Jets-9",
+                "LHC-13-Jets-10"
+            ]
+        }
+}

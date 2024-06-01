@@ -1,0 +1,124 @@
+#! /usr/bin/env python
+
+"""\
+%prog: Apply patch to yoda file from HepData
+
+Usage example: %prog [--help|-h] --pag SMP --name CMS_2017_I1631985 --input HEPData-ins1631985-v1-yoda1.yoda
+
+"""
+from rivet import getAnalysis
+import importlib
+import yoda 
+import os
+import re
+
+## Handle command line:
+from optparse import OptionParser
+parser = OptionParser(usage=__doc__)
+
+parser.add_option("--pag"    , dest="pag"  , default=None, help="PAG (for directory)")
+parser.add_option("--name"   , dest="name"  , default=None, help="Plugin name")
+parser.add_option("--input"  , dest="input"  , default=None, help="Input yoda file")
+
+opts, args = parser.parse_args()
+
+## Check Input options:
+if opts.pag == None or opts.name == None :
+    print("ERROR: Invalid input: Specify PAG and plugin name to find patch file")
+    exit()
+if opts.input == None:
+    autoInput = opts.pag + "/data/" + opts.name + ".yoda"
+    if os.path.isfile(autoInput):
+        opts.input = autoInput
+    else:
+        autoInput = autoInput + ".gz"
+        if os.path.isfile(autoInput):
+            opts.input = autoInput
+
+if ".gz" in opts.input:
+    print("ERROR: gzipped input not supported in this Rivet release, please unpack")
+    exit()
+
+if opts.input == None or not os.path.isfile(opts.input) :
+    print("ERROR: Invalid input: Specify path to existing yoda file with --input")
+    exit()
+
+# adapted from Rivet hepdatautils.py release-3-1-x 7c1826996c9a14220ee12fd0f73e9f0dc63725a7
+def patch_yodaref(yoda_from_hepdata, pattern=None, unpattern=None):
+    """\
+    Take a YODA file and check if the reference data contained in the file is in need of post-processing.
+    If so, apply relevant post-processing steps and return.
+
+    :param yoda_from_hepdata: YODA filename containing reference data from HEPData for post-processing
+    :param pattern: optional positive-filtering regex to pass to yoda.read(). Empty str = None
+    :param unpattern: optional negative-filtering regex to pass to yoda.read(). Empty str = None
+    :return: dict of post-processed YODA data objects from HEPData
+    """
+
+    import importlib, yoda
+    import rivet.hepdatapatches as hdpatch
+    # Get analysis object, request Ref(Un)match strings to pass as pattern & unpattern
+    hepdata_content = yoda.read(yoda_from_hepdata, True, pattern, unpattern)
+    extra=[]
+    for tag in hepdata_content:
+        if tag.startswith("/REF"):
+            routine, tableid = tag.rstrip("/")[5:].split('/')
+            routine = opts.name
+            # get relevant patch function for this routine and apply patch
+            routine_patcher = importlib.import_module(routine)
+            patch = getattr(routine_patcher, "patch")
+            hepdata_content[tag] = patch(tag, hepdata_content[tag])
+            if isinstance(hepdata_content[tag],list) :
+                aos = hepdata_content[tag]
+                for val in aos : extra.append(val)
+            else :
+                # The following hack is to remove the ErrorBreakdown for HepData entries
+                # where the histogram has inconsistent breakdowns across bins
+                # This is intended as a temporary workaround until we've fixed all the entries
+                try:
+                    try:
+                        nvars = len(hepdata_content[tag].variations())
+                    except RuntimeError:
+                        raise AssertionError("WARNING - Table {0} for {1} has a broken ErrorBreakdown!".format(tableid, routine))
+                    for p in hepdata_content[tag].points():
+                        assert(nvars == len(p.errMap().keys()))
+                except AssertionError:
+                    print ("WARNING - Table {0} for {1} has an inconsistent ErrorBreakdown across points!".format(tableid, routine))
+                    hepdata_content[tag].rmAnnotation('ErrorBreakdown')
+                    hepdata_content[tag].rmVariations()
+    # extra histos
+    for val in extra :
+         tag = val.path()
+         hepdata_content[tag] = val
+         # The following hack is to remove the ErrorBreakdown for HepData entries
+         # where the histogram has inconsistent breakdowns across bins
+         # This is intended as a temporary workaround until we've fixed all the entries
+         try:
+             try:
+                 nvars = len(hepdata_content[tag].variations())
+             except RuntimeError:
+                 raise AssertionError("WARNING - Table {0} for {1} has a broken ErrorBreakdown!".format(tableid, routine))
+             for p in hepdata_content[tag].points():
+                 assert(nvars == len(p.errMap().keys()))
+         except AssertionError:
+             print ("WARNING - Table {0} for {1} has an inconsistent ErrorBreakdown across points!".format(tableid, routine))
+             hepdata_content[tag].rmAnnotation('ErrorBreakdown')
+             hepdata_content[tag].rmVariations()
+    return hepdata_content
+
+# adapted from Rivet rivet-diffhepdata release-3-1-x 7c1826996c9a14220ee12fd0f73e9f0dc63725a7
+matchstr, unmatchstr = None, None
+# FIXME: this requires swiching to a CMSSW release with a more recent Rivet version
+# try:
+#     a = getAnalysis(opt.name)
+#     matchstr, unmatchstr = a.refMatch(), a.refUnmatch()
+#     del a
+# except:
+#     print("Couldn't instantiate analysis {ana} to check for HD Ref(Un)match regexes".format(ana=opts.name))
+
+yodafile_from_hepdata = opts.input
+patchedContent = patch_yodaref(yodafile_from_hepdata, matchstr, unmatchstr) # apply post-processing
+# save the post-processed content in the HEPData directory and use it instead
+yodasplits = yodafile_from_hepdata.split('.', 1)
+yodafile_from_hepdata = '{}-post.yoda'.format(yodasplits[0])
+yoda.writeYODA(patchedContent, yodafile_from_hepdata)

@@ -1,0 +1,168 @@
+{
+    "1965242": [
+        "Observation of triple J/\u03c8 meson production in proton-proton collisions", 
+        "CMS", 
+        "10.1038/s41567-022-01838-y", 
+        "2790122", 
+        "2111.05370", 
+        "ins1965242", 
+        null, 
+        [
+            "CMS-BPH-21-004", 
+            "CERN-EP-2021-215"
+        ]
+    ], 
+    "2072383": [
+        "Search for a massive scalar resonance decaying to a light scalar and a Higgs boson in the four b quarks final state with boosted topology", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137392", 
+        "2807689", 
+        "2204.12413", 
+        "ins2072383", 
+        null, 
+        [
+            "CMS-B2G-21-003", 
+            "CERN-EP-2022-034"
+        ]
+    ], 
+    "2072831": [
+        "Search for Higgs boson decays to a Z boson and a photon in proton-proton collisions at $ \\sqrt{s} $ = 13 TeV", 
+        "CMS", 
+        "10.1007/JHEP05(2023)233", 
+        "2807790", 
+        "2204.12945", 
+        "ins2072831", 
+        null, 
+        [
+            "CMS-HIG-19-014", 
+            "CERN-EP-2022-019"
+        ]
+    ], 
+    "2075415": [
+        "Strange hadron collectivity in pPb and PbPb collisions", 
+        "CMS", 
+        "10.1007/JHEP05(2023)007", 
+        "2808047", 
+        "2205.00080", 
+        "ins2075415", 
+        null, 
+        [
+            "CMS-HIN-19-004", 
+            "CERN-EP-2022-036"
+        ]
+    ], 
+    "2075454": [
+        "Test beam performance of a CBC3-based mini-module for the Phase-2 CMS Outer Tracker before and after neutron irradiation", 
+        "Tracker Group of the CMS", 
+        "10.1088/1748-0221/18/04/P04001", 
+        "2847465", 
+        "2205.00961", 
+        null, 
+        null, 
+        []
+    ], 
+    "2080534": [
+        "Observation of electroweak W+W\u2212 pair production in association with two jets in proton-proton collisions at <math altimg=\"si1.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn><mspace width=\"0.2em\"/><mtext>TeV</mtext></math>", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137495", 
+        "2809311", 
+        "2205.05711", 
+        "ins2080534", 
+        null, 
+        [
+            "CMS-SMP-21-001", 
+            "CERN-EP-2022-038"
+        ]
+    ], 
+    "2081834": [
+        "Search for heavy resonances and quantum black holes in e\u03bc, e\u03c4, and \u03bc\u03c4 final states in proton-proton collisions at $ \\sqrt{s} $ = 13 TeV", 
+        "CMS", 
+        "10.1007/JHEP05(2023)227", 
+        "2809468", 
+        "2205.06709", 
+        "ins2081834", 
+        null, 
+        [
+            "CMS-EXO-19-014", 
+            "CERN-EP-2022-033"
+        ]
+    ], 
+    "2083735": [
+        "Search for long-lived particles decaying to a pair of muons in proton-proton collisions at $ \\sqrt{s} $ = 13 TeV", 
+        "CMS", 
+        "10.1007/JHEP05(2023)228", 
+        "2809713", 
+        "2205.08582", 
+        "ins2083735", 
+        null, 
+        [
+            "CMS-EXO-21-006", 
+            "CERN-EP-2022-080"
+        ]
+    ], 
+    "2085373": [
+        "Search for electroweak production of charginos and neutralinos at <math altimg=\"si1.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn><mspace width=\"0.25em\"/><mtext>TeV</mtext></math> in final states containing hadronic decays of WW, WZ, or WH and missing transverse momentum", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137460", 
+        "2809889", 
+        "2205.09597", 
+        "ins2085373", 
+        null, 
+        [
+            "CMS-SUS-21-002", 
+            "CERN-EP-2022-031"
+        ]
+    ], 
+    "2092995": [
+        "Search for Higgs boson decays into Z and J/\u03c8 and for Higgs and Z boson decays into J/\u03c8 or Y pairs in pp collisions at <math altimg=\"si1.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn><mtext>\u00a0TeV</mtext></math>", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137534", 
+        "2811632", 
+        "2206.03525", 
+        "ins2092995", 
+        null, 
+        [
+            "CMS-HIG-20-008", 
+            "CERN-EP-2022-074"
+        ]
+    ], 
+    "2096380": [
+        "Precision measurement of the Z boson invisible width in pp collisions at <math altimg=\"si1.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn></math> TeV", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137563", 
+        "2812261", 
+        "2206.07110", 
+        "ins2096380", 
+        null, 
+        [
+            "CMS-SMP-18-014", 
+            "CERN-EP-2022-088"
+        ]
+    ], 
+    "2098240": [
+        "Search for nonresonant Higgs boson pair production in final state with two bottom quarks and two tau leptons in proton-proton collisions at <math altimg=\"si1.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn><mtext>\u00a0TeV</mtext></math>", 
+        "CMS", 
+        "10.1016/j.physletb.2022.137531", 
+        "2812733", 
+        "2206.09401", 
+        "ins2098240", 
+        null, 
+        [
+            "CMS-HIG-20-010", 
+            "CERN-EP-2022-117"
+        ]
+    ], 
+    "2616304": [
+        "Measurement of the <math altimg=\"si1.svg\"><msubsup><mrow><mtext>B</mtext></mrow><mrow><mtext>s</mtext></mrow><mrow><mn>0</mn></mrow></msubsup><mo stretchy=\"false\">\u2192</mo><msup><mrow><mi mathvariant=\"normal\">\u03bc</mi></mrow><mrow><mo linebreak=\"badbreak\" linebreakstyle=\"after\">+</mo></mrow></msup><msup><mrow><mi mathvariant=\"normal\">\u03bc</mi></mrow><mrow><mo linebreak=\"badbreak\" linebreakstyle=\"after\">\u2212</mo></mrow></msup></math> decay properties and search for the B0\u202f\u2192\u202f\u03bc+\u03bc\u2212 decay in proton-proton collisions at <math altimg=\"si2.svg\"><msqrt><mrow><mi>s</mi></mrow></msqrt><mo linebreak=\"goodbreak\" linebreakstyle=\"after\">=</mo><mn>13</mn><mspace width=\"0.2em\"/><mtext>TeV</mtext></math>", 
+        "CMS", 
+        "10.1016/j.physletb.2023.137955", 
+        "2845092", 
+        "2212.10311", 
+        "ins2616304", 
+        null, 
+        [
+            "CMS-BPH-21-006", 
+            "CERN-EP-2022-270"
+        ]
+    ]
+}

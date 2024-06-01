@@ -1,0 +1,9 @@
+{
+        "LHC-13-UE" : {
+            "type" : "hist",
+            "samples" : [
+                "LHC-13-UE",
+                "LHC-13-UE-Long"
+            ]
+        }
+}

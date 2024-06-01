@@ -1,0 +1,6 @@
+{
+        "LHC-13-Minbias" : {
+            "type" : "hist",
+            "samples" : ["LHC-13-Minbias"]
+        }
+}

@@ -1,0 +1,37 @@
+BEGIN YODA_SCATTER2D_V2 /REF/CMS_2024_PAS_SMP_24_005/d02-x01-y01
+ErrorBreakdown: {0: {"": {up: 0, dn: 0}}, 1: {"": {up: 0, dn: 0}}, 2: {"": {up: 0, dn: 0}}, 3: {"": {up: 0, dn: 0}}}
+Path: /REF/CMS_2024_PAS_SMP_24_005/d02-x01-y01
+Title: Deltaphi
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+-2.570000e+00	4.676410e-01	4.676410e-01	2.186881e+03	0.000000e+00	0.000000e+00
+-1.000000e+00	5.140328e-01	5.140328e-01	2.642297e+03	0.000000e+00	0.000000e+00
+1.000000e+00	5.139478e-01	5.139478e-01	2.641423e+03	0.000000e+00	0.000000e+00
+2.570000e+00	4.676410e-01	4.676410e-01	0.000000e+00	0.000000e+00	0.000000e+00
+END YODA_SCATTER2D_V2
+
+BEGIN YODA_SCATTER2D_V2 /REF/CMS_2024_PAS_SMP_24_005/d01-x01-y01
+ErrorBreakdown: {0: {"": {up: 0, dn: 0}}, 1: {"": {up: 0, dn: 0}}, 2: {"": {up: 0, dn: 0}}}
+Path: /REF/CMS_2024_PAS_SMP_24_005/d01-x01-y01
+Title: pt
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+2.250000e+02	 2.5e+01 	 2.5e+01	4.178193e+03	0.000000e+00	0.000000e+00
+3.000000e+02	 5.0e+01	 5.0e+01	3.722763e+03	0.000000e+00	0.000000e+00
+5.250000e+02	 5.0e+01	 5.0e+01	1.892663e+03	0.000000e+00	0.000000e+00
+END YODA_SCATTER2D_V2
+
+BEGIN YODA_SCATTER2D_V2 /REF/CMS_2024_PAS_SMP_24_005/d03-x01-y01
+ErrorBreakdown: {0: {"": {up: 0, dn: 0}}, 1: {"": {up: 0, dn: 0}}, 2: {"": {up: 0, dn: 0}}}
+Path: /REF/CMS_2024_PAS_SMP_24_005/d03-x01-y01
+Title: mjj
+Type: Scatter2D
+---
+# xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+	
+6.500000e+02	4.494803e+01	4.494803e+01	2.020325e+03	0.000000e+00	0.000000e+00
+1.000000e+03	5.305865e+01	5.305865e+01	2.815220e+03	0.000000e+00	0.000000e+00
+1.400000e+03	7.074814e+01	7.074814e+01	5.005299e+03	0.000000e+00	0.000000e+00
+END YODA_SCATTER2D_V2
+
