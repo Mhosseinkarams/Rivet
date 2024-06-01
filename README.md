@@ -66,7 +66,6 @@ cmsRun runRivetAnalyzer_VJJ_miniAOD2016pre.py
     ```sh
     crab submit --config crab_cfg2016pre.py General.requestName=GJets_SM_5f_TuneCP5_EWK_2016pre Data.inputDataset=/GJets_SM_5f_TuneCP5_EWK_dipoleRecoil_13TeV-madgraph-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM General.workArea=GJets_SM_5f_TuneCP5_EWK_2016pre
     ```
-
 ### Dataset Configuration
 
 For each dataset ("2016pre", "2016post", "2017", "2018"), there is a corresponding CRAB configuration file and a `.cc` file. The `.cc` files, responsible for the main Rivet analysis, are located in the `SMP/src` directory. Each analysis has different source files:
@@ -77,6 +76,43 @@ For each dataset ("2016pre", "2016post", "2017", "2018"), there is a correspondi
 - **2018 dataset**: `CMS_2018_PAS_SMP_19_005`
 
 Each Rivet analysis has its own source files located in both `SMP/data` and `SMP/src`. It is recommended to keep these two directories in sync.
+
+
+## Output Handling
+
+The outputs of the CRAB jobs can be found in the following directory:
+
+```
+/eos/cms/store/group/phys_smp/vbfA/Mhossein_Rivet_test
+```
+
+### Merging Output Files
+
+To merge the output files, you can use:
+
+```sh
+rivet-merge -e [first.yoda] [second.yoda] ... -o [merged.yoda]
+```
+
+Or for easier use:
+
+```sh
+rivet-merge -e *.yoda -o [merged.yoda]
+```
+
+### Plotting and Conversion
+
+To draw the plots:
+
+```sh
+rivet-mkhtml --no-weight [file.yoda]
+```
+
+To convert to a ROOT file:
+
+```sh
+yoda2root [input.yoda] [output.root]
+```
 
 ## Generating .yoda Files
 
